@@ -193,9 +193,9 @@ Vector createLocalb(int e,mesh &m){
     zeroes(b0,6);
     productMatrixVector(g_matrix,psi,b0);
     productRealVector(J/6,b0,b);
-    b.push_back(eta*J); 
-    b.push_back(eta*J); 
-    b.push_back(eta*J);
+    b.push_back((eta*J)/6); 
+    b.push_back((eta*J)/6); 
+    b.push_back((eta*J)/6);
 
     return b;
 }
